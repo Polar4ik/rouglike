@@ -31,7 +31,3 @@ func get_random_cell(usd_cell_crd: Vector2i) -> Vector2i:
 func _input(_e: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		get_tree().reload_current_scene()
-
-func center_filter(num: Vector2i) -> bool:
-	var local_border := Rect2i(125, 125, 250, 250)
-	return local_border.has_point(num)
